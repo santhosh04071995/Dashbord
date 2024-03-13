@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <!-- <div class="container-fluid row">
+    <div class="col-3">
+      <SideBar />
+    </div>
+    <div class="col-9">
+        <ContentView />
+    </div>
+  
+  </div> -->
+  <SimpleView />
+  
+</div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SimpleView from './components/SimpleView.vue'
+//import ContentView from './components/ContentView.vue'
+//import SideBar from './components/SideBar.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+  SimpleView
+}
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
